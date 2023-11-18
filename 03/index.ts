@@ -12,4 +12,18 @@ function makeMultiplicationTable(array: number[]) {
   }
 }
 
-makeMultiplicationTable([1, 3]);
+/* makeMultiplicationTable([1, 3]); */
+
+// Solução com arrow function e methods e while / refactoring
+const multiplicationWithMethods = (array: number[]) => {
+  array.forEach((element) => {
+    let multiplicator: number = 0;
+    while (multiplicator <= 10) {
+      console.log(`${element} X ${multiplicator} = ${element * multiplicator}`);
+      multiplicator++;
+    }
+    console.log("------------");
+  });
+};
+
+multiplicationWithMethods([1, 3]);

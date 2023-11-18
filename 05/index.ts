@@ -9,3 +9,9 @@ function spell(text: string): string {
 }
 
 console.log(spell("HelloWorld"));
+
+function spell2(text: string): string {
+  return text.split("").join("-");
+}
+
+console.log(spell2("HelloWorld"));
